@@ -39,8 +39,8 @@ int main(){
             dp[i][j] =max( dp[i-1][j],mat[i].rt + dp[i-1][j-mat[i].wt] );
     }
 
-    for(int i = 1; i<=n; i++){
-        for(int j = 1; j<=sz; j++)
+    for(int i = 0; i<=n; i++){
+        for(int j = 0; j<=sz; j++)
             cout<<dp[i][j]<<" ";
         cout<<endl;
     }
